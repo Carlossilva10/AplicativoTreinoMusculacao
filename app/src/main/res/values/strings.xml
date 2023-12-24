@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AplicativoTreinoMusculacao</string>
+    <string name="entrar">Entrar</string>
+    <string name="aplicativo">GYM em CASA</string>
+    <string name="cadastrar">Não tenho cadastro</string>
+    <string name="texto_inicial2">Ideal para quem está começando a treinar agora. Ele é ótimo, simples, básico e intuitivo.
+Oferece uma gama de exercícios e você pode alterar seus treinamentos incluindo e excluindo sendo ótimo para quem é iniciante.</string>
+    <string name="texto_inicial1">Ganhe massa muscular ou perca peso em casa. \n \n Trabalhe:\n -Abdomen \n -Braços \n -Peito \n -Pernas</string>
+
+
+</resources>
