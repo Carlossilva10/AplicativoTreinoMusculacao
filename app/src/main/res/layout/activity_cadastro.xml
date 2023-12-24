@@ -69,31 +69,32 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/btIniciar"
+        android:id="@+id/btSalvar"
         android:layout_width="177dp"
         android:layout_height="53dp"
         android:backgroundTint="@color/mediumBlue"
-        android:text="Salvar"
+        android:text="@string/salvar"
         android:textColor="@color/goldenrod"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/editSenha"
         app:layout_constraintStart_toStartOf="@+id/editSenha"
-        tools:layout_editor_absoluteY="525dp" />
+        tools:layout_editor_absoluteY="525dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btVoltar"
         android:layout_width="177dp"
         android:layout_height="53dp"
         android:backgroundTint="@color/mediumBlue"
-        android:text="Voltar"
+        android:text="@string/voltar"
         android:textColor="@color/goldenrod"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/editSenha"
         app:layout_constraintStart_toStartOf="@+id/editSenha"
-        app:layout_constraintTop_toBottomOf="@+id/btIniciar" />
+        app:layout_constraintTop_toBottomOf="@+id/btSalvar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

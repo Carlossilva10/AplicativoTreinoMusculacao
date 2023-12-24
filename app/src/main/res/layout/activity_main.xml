@@ -71,7 +71,7 @@
         android:layout_marginBottom="20dp"
         android:backgroundTint="@color/slateGray"
         android:text="@string/entrar"
-        android:textColor="@color/goldenrod"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold" />
 
