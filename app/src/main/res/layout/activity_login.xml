@@ -32,21 +32,21 @@
 
 
     <EditText
-        android:id="@+id/editNome"
+        android:id="@+id/editNomeLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nome"
         android:textStyle="bold"
         android:background="@color/white"
         android:maxLines="1"
-        android:gravity="center"
+        android:gravity="left"
         android:padding="15dp"
         android:layout_marginTop="20dp"
         android:layout_marginStart="40dp"
         android:layout_marginEnd="40dp"/>
 
     <EditText
-        android:id="@+id/editSenha"
+        android:id="@+id/editSenhaLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Senha"
@@ -54,7 +54,7 @@
         android:background="@color/white"
         android:inputType="numberPassword"
         android:maxLines="1"
-        android:gravity="center"
+        android:gravity="left"
         android:padding="15dp"
         android:layout_marginTop="20dp"
         android:layout_marginStart="40dp"
@@ -64,15 +64,32 @@
         android:id="@+id/btLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LOGIN"
+        android:text="@string/login"
         android:textColor="@color/goldenrod"
         android:backgroundTint="@color/slateGray"
         android:textSize="18sp"
         android:textStyle="bold"
         android:padding="15dp"
+        android:gravity="center"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"/>
+
+
+    <Button
+        android:id="@+id/btResgatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/resgatar"
+        android:textColor="@color/goldenrod"
+        android:backgroundTint="@color/slateGray"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
         android:layout_marginBottom="20dp"/>
 
 </LinearLayout>

@@ -4,6 +4,8 @@
     <string name="login">LOGIN</string>
     <string name="salvar">SALVAR</string>
     <string name="voltar">VOLTAR</string>
+    <string name="inicio">TELA INICIAL</string>
+    <string name="resgatar">RESGATAR SENHA</string>
     <string name="aplicativo">GYM em CASA</string>
     <string name="cadastrar">Não tenho cadastro</string>
     <string name="texto_inicial2">Ideal para quem está começando a treinar agora. Ele é ótimo, simples, básico e intuitivo.

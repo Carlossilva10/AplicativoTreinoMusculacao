@@ -70,7 +70,7 @@
 
     <Button
         android:id="@+id/btSalvar"
-        android:layout_width="177dp"
+        android:layout_width="200dp"
         android:layout_height="53dp"
         android:backgroundTint="@color/mediumBlue"
         android:text="@string/salvar"
@@ -84,10 +84,10 @@
 
     <Button
         android:id="@+id/btVoltar"
-        android:layout_width="177dp"
+        android:layout_width="200dp"
         android:layout_height="53dp"
         android:backgroundTint="@color/mediumBlue"
-        android:text="@string/voltar"
+        android:text="@string/inicio"
         android:textColor="@color/goldenrod"
         android:textSize="20sp"
         android:textStyle="bold"

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.aplicativotreinomusculacao.databinding.ActivityMainBinding
+import com.example.aplicativotreinomusculacao.view.Cadastro
 import com.example.aplicativotreinomusculacao.view.Login
 
 class MainActivity : AppCompatActivity() {
@@ -18,6 +19,13 @@ class MainActivity : AppCompatActivity() {
 
             val navegarParaLogin = Intent(this,Login::class.java)
             startActivity(navegarParaLogin)
+
+        }
+
+        binding.btCadastrar.setOnClickListener {
+
+            val navegarTelaCadastro = Intent(this,Cadastro::class.java)
+            startActivity(navegarTelaCadastro)
         }
     }
 }
