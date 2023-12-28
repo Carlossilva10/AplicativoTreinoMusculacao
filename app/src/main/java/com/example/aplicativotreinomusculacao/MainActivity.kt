@@ -22,10 +22,6 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        binding.btCadastrar.setOnClickListener {
 
-            val navegarTelaCadastro = Intent(this,Cadastro::class.java)
-            startActivity(navegarTelaCadastro)
-        }
     }
 }

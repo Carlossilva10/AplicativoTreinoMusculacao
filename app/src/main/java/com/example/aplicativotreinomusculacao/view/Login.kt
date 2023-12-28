@@ -6,51 +6,72 @@ import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.viewbinding.ViewBinding
 import com.example.aplicativotreinomusculacao.MainActivity
+import com.example.aplicativotreinomusculacao.databinding.ActivityLoginBinding
 import com.example.aplicativotreinomusculacao.databinding.ActivityMainBinding
 import com.google.android.material.snackbar.Snackbar
+import java.security.Principal
 
 
 class Login : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
-    @SuppressLint("SuspiciousIndentation")
+    private lateinit var binding: ActivityLoginBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         supportActionBar?.hide()
 
         binding.btEntrar.setOnClickListener {
 
-            val nome = binding.editNomeLogin.text.toString()
-            val senha = binding.editSenhaLogin.text.toString()
 
-                when{
+
+            val nome = binding.editNome.text.toString()
+            val senha = binding.editSenha.text.toString()
+
+
+            when{
                 nome.isEmpty() -> {
-                    mensagem(it, "Coloque o seu nome!")
-                }senha.isEmpty() ->{
-                    mensagem(it, "Preencha a senha!")
-                }senha.length <=5 -> {
-                    mensagem(it, "A senha precisa ter pelo menos 6 caracteres!")
-                }else -> {
-                    navegarPraMain(nome)
+                    mensagem(it, "Preencha o Nome!")
+                }
+                senha.isEmpty() -> {
+                    mensagem(it, "Preencha a Senha!")
                 }
 
+                senha.length <= 5 -> {
+                    val snackbar = Snackbar.make(it, "A senha precisa ter pelo menos e caracteres!", Snackbar.LENGTH_SHORT)
+                    snackbar.show()
                 }
+                else -> {
+                    navegarPraHome()
+                }
+
             }
+
+
+
         }
+
+        binding.btCadastrar.setOnClickListener {
+
+            val navegarTelaCadastro = Intent(this,Cadastro::class.java)
+            startActivity(navegarTelaCadastro)
+            finish()
+        }
+
+
+    }
     private  fun mensagem(view: View, mensagem: String){
         val snackbar = Snackbar.make(view, mensagem, Snackbar.LENGTH_SHORT)
         snackbar.setBackgroundTint(Color.parseColor("#FF0000"))
         snackbar.setTextColor(Color.parseColor("#FFFFFF"))
         snackbar.show()
     }
-
-    private fun navegarPraMain(nome: String){
-        val navegarTelaInicial = Intent(this, MainActivity::class.java)
-        startActivity(navegarTelaInicial)
+    private fun navegarPraHome(){
+        val navegarHome = Intent(this, Cadastro::class.java)
+        startActivity(navegarHome)
     }
 
-    }
+}

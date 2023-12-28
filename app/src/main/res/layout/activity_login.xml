@@ -5,34 +5,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/transparente1"
     android:fillViewport="true">
 
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
     android:gravity="center"
     tools:context=".view.Login">
 
     <TextView
+        android:id="@+id/editTelaLogin"
         android:layout_width="match_parent"
         android:layout_height="125dp"
         android:gravity="center"
         android:text="Tela de Login"
-        android:textColor="@color/goldenrod"
+        android:textColor="@color/black"
         android:textSize="36sp"
         android:textStyle="bold" />
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:src="@drawable/logo2"/>
+        android:src="@drawable/logo3"/>
 
 
 
     <EditText
-        android:id="@+id/editNomeLogin"
+        android:id="@+id/editNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Nome"
@@ -46,7 +47,7 @@
         android:layout_marginEnd="40dp"/>
 
     <EditText
-        android:id="@+id/editSenhaLogin"
+        android:id="@+id/editSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Senha"
@@ -61,36 +62,36 @@
         android:layout_marginEnd="40dp"/>
 
     <Button
-        android:id="@+id/btLogin"
+        android:id="@+id/btEntrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/login"
-        android:textColor="@color/goldenrod"
-        android:backgroundTint="@color/slateGray"
+        android:text="@string/entrar"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/LightGrey"
         android:textSize="18sp"
         android:textStyle="bold"
         android:padding="15dp"
         android:gravity="center"
         android:layout_marginTop="20dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"/>
 
 
     <Button
-        android:id="@+id/btResgatar"
+        android:id="@+id/btCadastrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/resgatar"
-        android:textColor="@color/goldenrod"
-        android:backgroundTint="@color/slateGray"
+        android:text="@string/cadastrar"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/LightGrey"
         android:textSize="18sp"
         android:gravity="center"
         android:textStyle="bold"
         android:padding="15dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"/>
 
 </LinearLayout>
 
